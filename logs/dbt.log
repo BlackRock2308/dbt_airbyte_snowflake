@@ -1,0 +1,44 @@
+[0m14:23:05.332879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc0d212400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc0f139760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc0f139580>]}
+
+
+============================== 14:23:05.343022 | b7c8ec4e-0f11-4da7-bf78-5ee1a70e6af3 ==============================
+[0m14:23:05.343022 [info ] [MainThread]: Running with dbt=1.8.7
+[0m14:23:05.344288 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/macbookpro/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:23:13.091915 [debug] [MainThread]: Starter project path: /Users/macbookpro/Documents/dbt_airbyte_snowflake/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m14:23:13.111294 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:23:13.112121 [info ] [MainThread]: Setting up your profile.
+[0m14:26:51.694665 [info ] [MainThread]: Profile data_pipeline written to /Users/macbookpro/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:26:51.705187 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 226.49318, "process_user_time": 2.698911, "process_kernel_time": 0.672809, "process_mem_max_rss": "103202816", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:26:51.707761 [debug] [MainThread]: Command `dbt init` succeeded at 14:26:51.707351 after 226.50 seconds
+[0m14:26:51.711469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc0d212400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc0f414a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc0f12a610>]}
+[0m14:26:51.713324 [debug] [MainThread]: Flushing usage events
+[0m14:30:53.115116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2ea992670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2ec9fb460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2ec9fb280>]}
+
+
+============================== 14:30:53.125493 | 8befcddd-c633-4e54-9875-4bbb13ea1a8a ==============================
+[0m14:30:53.125493 [info ] [MainThread]: Running with dbt=1.8.7
+[0m14:30:53.127112 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/macbookpro/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m14:30:53.129065 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/macbookpro/Documents/dbt_airbyte_snowflake/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:30:53.134840 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.25948125, "process_user_time": 2.34661, "process_kernel_time": 0.531297, "process_mem_max_rss": "84205568", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:30:53.136413 [debug] [MainThread]: Command `dbt deps` failed at 14:30:53.136030 after 0.26 seconds
+[0m14:30:53.137535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2ea992670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2ec971520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e7d89910>]}
+[0m14:30:53.138490 [debug] [MainThread]: Flushing usage events
